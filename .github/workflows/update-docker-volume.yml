@@ -28,9 +28,9 @@ jobs:
     - name: Pull Docker Image
       run: docker pull wordpress:latest
 
-    - name: Update Volume with New Content
+    - name: Copy Updated Content
       run: |
-        docker run --rm -v crackudosmangas_data:/data -v $(pwd)/path/to/updated-content:/content alpine sh -c "cp -r /content/* /data/"
+        docker run --rm -v crackudosmangas_data:/data -v $(pwd)/path/to/updated-content:/content alpine sh -c "ls -la /content && cp -r /content/* /data/"
 
     - name: Restart Docker Containers
       run: |
