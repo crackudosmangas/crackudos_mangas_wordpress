@@ -3,7 +3,7 @@ name: Update Docker Volume
 on:
   push:
     branches:
-      - main  # Ou a branch que você está usando
+      - master  # Ou a branch que você está usando
 
 jobs:
   update-volume:
