@@ -1,1 +1,62 @@
+version: "3.7"
+services:
 
+## --------------------------- ORION --------------------------- ##
+
+  crackudosmangas_wordpress:
+    image: wordpress:latest ## Versão do Wordpress
+
+    volumes:
+      - crackudosmangas_data:/var/www/html
+      - crackudosmangas_php:/usr/local/etc/php
+
+    networks:
+      - GamaNet ## Nome da rede interna
+
+    environment:
+      ## Dados do Mysql
+      - WORDPRESS_DB_NAME=crackudosmangas
+      - WORDPRESS_DB_HOST=mysql
+      - WORDPRESS_DB_PORT=3306
+      - WORDPRESS_DB_USER=root
+      - WORDPRESS_DB_PASSWORD=e1122babecce6787563097f3a1db55a0
+
+      ## Redis
+      - WP_REDIS_HOST=redis
+      - WP_REDIS_DATABASE=6
+
+      ## Url do Wordpress
+      - VIRTUAL_HOST=crackudosmangas.com
+
+      ## Localização
+      - WP_LOCALE=pt_BR
+
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.crackudosmangas_wordpress.rule=Host(`crackudosmangas.com`)
+        - traefik.http.routers.crackudosmangas_wordpress.entrypoints=websecure
+        - traefik.http.routers.crackudosmangas_wordpress.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.crackudosmangas_wordpress.service=crackudosmangas_wordpress
+        - traefik.http.services.crackudosmangas_wordpress.loadbalancer.server.port=80
+        - traefik.http.services.crackudosmangas_wordpress.loadbalancer.passHostHeader=true
+
+## --------------------------- ORION --------------------------- ##
+
+volumes:
+  crackudosmangas_data:
+    external: true
+    name: crackudosmangas_data
+  crackudosmangas_php:
+    external: true
+    name: crackudosmangas_php
+
+networks:
+  GamaNet: ## Nome da rede interna
+    name: GamaNet ## Nome da rede interna
+    external: true
