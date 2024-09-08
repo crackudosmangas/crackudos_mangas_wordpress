@@ -1,0 +1,15 @@
+# Ignorar o arquivo de configuração do WordPress
+wp-config.php
+
+# Ignorar o diretório de uploads, pois esses arquivos geralmente não precisam ser versionados
+wp-content/uploads/
+
+# Ignorar o diretório de cache
+wp-content/cache/
+
+# Ignorar o diretório de updates e upgrades
+wp-content/upgrade/
+
+# Ignorar logs e arquivos temporários
+*.log
+*.tmp
