@@ -6,6 +6,7 @@ services:
   crackudosmangas_wordpress:
     image: wordpress:latest ## Versão do Wordpress
 
+
     volumes:
       - crackudosmangas_data:/var/www/html
       - crackudosmangas_php:/usr/local/etc/php
