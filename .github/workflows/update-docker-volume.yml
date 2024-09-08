@@ -3,7 +3,7 @@ name: Update Docker Volume
 on:
   push:
     branches:
-      - main  # Ou a branch que você está usando
+      - master  # Ou a branch que você está usando
 
 jobs:
   update-volume:
@@ -16,6 +16,9 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
+    - name: Install Docker Compose
+      run: sudo apt-get install docker-compose
+
     - name: Login to Docker Hub
       uses: docker/login-action@v2
       with:
@@ -23,12 +26,11 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Pull Docker Image
-      run: |
-        docker pull wordpress:latest
+      run: docker pull wordpress:latest
 
     - name: Update Volume with New Content
       run: |
-        docker run --rm -it -v crackudosmangas_data:/data -v $(pwd)/path/to/updated-content:/content alpine sh -c "cp -r /content/* /data/"
+        docker run --rm -v crackudosmangas_data:/data -v $(pwd)/path/to/updated-content:/content alpine sh -c "cp -r /content/* /data/"
 
     - name: Restart Docker Containers
       run: |
