@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Four package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-10-26 19:28:27+0000\n"
+"PO-Revision-Date: 2024-09-07 21:00:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,106 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: pt_BR\n"
 "Project-Id-Version: Themes - Twenty Twenty-Four\n"
+
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Twenty Twenty-Four"
+msgstr "Twenty Twenty-Four"
+
+#: patterns/text-title-left-image-right.php
+msgctxt "Pattern description"
+msgid "A title, a paragraph and a CTA button on the left with an image on the right."
+msgstr "Um título, um parágrafo e um botão CTA à esquerda com uma imagem à direita."
+
+#: patterns/text-project-details.php
+msgctxt "Pattern description"
+msgid "A text only section for project details."
+msgstr "Uma seção somente de texto para detalhes do projeto."
+
+#: patterns/text-feature-grid-3-col.php
+msgctxt "Pattern description"
+msgid "A feature grid of 2 rows and 3 columns with headings and text."
+msgstr "Uma grade de recursos de 2 linhas e 3 colunas com títulos e texto."
+
+#: patterns/text-faq.php:35
+msgctxt "Question in the FAQ pattern"
+msgid "Who is behind Études?"
+msgstr "Quem está por trás dos Études?"
+
+#: patterns/text-faq.php
+msgctxt "Pattern description"
+msgid "A FAQ section with a large FAQ heading and list of toggle questions and answers."
+msgstr "Uma seção de perguntas frequentes com um grande título e uma lista alternada de perguntas e respostas."
+
+#: patterns/text-centered-statement.php
+msgctxt "Pattern description"
+msgid "A centered text statement with a large paddings."
+msgstr "Uma declaração de texto centralizada com grandes espaçamentos."
+
+#: patterns/text-centered-statement-small.php
+msgctxt "Pattern description"
+msgid "A centered itallic text statement with compact padding."
+msgstr "Uma declaração de texto centralizada em itálico com preenchimento compacto."
+
+#: patterns/text-alternating-images.php
+msgctxt "Pattern description"
+msgid "A text section, then a two column section with text in one and image in another."
+msgstr "Uma seção de texto e então uma seção de duas colunas com texto em uma e imagem em outra."
+
+#: patterns/testimonial-centered.php
+msgctxt "Pattern description"
+msgid "A centered testimonial section with a avatar, name, and job title."
+msgstr "Uma seção de depoimentos centralizada com um avatar, nome e cargo."
+
+#: patterns/team-4-col.php
+msgctxt "Pattern description"
+msgid "A team section, with a heading, a paragraph, and 4 columns for team members."
+msgstr "Uma seção de equipe, com um título, um parágrafo e 4 colunas para os membros da equipe."
+
+#: patterns/posts-list.php
+msgctxt "Pattern description"
+msgid "A list of posts without images, 1 column."
+msgstr "Uma lista de posts sem imagens, 1 coluna."
+
+#: patterns/posts-images-only-offset-4-col.php
+msgctxt "Pattern description"
+msgid "A list of posts with featured images only, 4 columns."
+msgstr "Uma lista de posts apenas com imagens em destaque, 4 colunas."
+
+#: patterns/posts-images-only-3-col.php
+msgctxt "Pattern description"
+msgid "A list of posts with featured images only, 3 columns."
+msgstr "Uma lista de posts apenas com imagens em destaque, 3 colunas."
+
+#: patterns/posts-grid-2-col.php
+msgctxt "Pattern description"
+msgid "A grid of posts featuring the first post, 2 columns."
+msgstr "Uma grade de posts apresentando o primeiro post, 2 colunas."
+
+#: patterns/posts-3-col.php
+msgctxt "Pattern description"
+msgid "A list of posts, 3 columns."
+msgstr "Uma lista de posts, 3 colunas."
+
+#: patterns/posts-1-col.php
+msgctxt "Pattern description"
+msgid "A list of posts, 1 column."
+msgstr "Uma lista de posts, 1 coluna."
+
+#: patterns/posts-list.php
+msgctxt "Pattern title"
+msgid "List of posts without images, 1 column"
+msgstr "Lista de posts sem imagens, 1 coluna"
+
+#: functions.php:200
+msgid "A collection of full page layouts."
+msgstr "Uma coleção de modelos de página completa."
+
+#: functions.php:199
+msgctxt "Block pattern category"
+msgid "Pages"
+msgstr "Páginas"
 
 #: theme.json
 msgctxt "Template part name"
@@ -95,8 +195,93 @@ msgctxt "Space size name"
 msgid "1"
 msgstr "1"
 
+#: patterns/cta-content-image-on-right.php:24
+#: patterns/text-alternating-images.php:44
+msgctxt "Sample list item"
+msgid "Collaborate with fellow architects."
+msgstr "Colabore com outros arquitetos."
+
+#: patterns/cta-content-image-on-right.php:18
+msgctxt "Sample heading"
+msgid "Enhance your architectural journey with the Études Architect app."
+msgstr "Melhore sua jornada arquitetônica com o aplicativo Études Architect."
+
+#: patterns/cta-content-image-on-right.php
+msgctxt "Pattern title"
+msgid "Call to action with image on right"
+msgstr "Chamada para ação com imagem à direita"
+
+#: patterns/banner-project-description.php:41
+msgid "Hyatt Regency San Francisco, San Francisco, United States"
+msgstr "Hyatt Regency San Francisco, São Francisco, Estados Unidos"
+
+#: patterns/banner-project-description.php:26
+msgctxt "Sample descriptive text for a project or post."
+msgid "This transformative project seeks to enhance the gallery's infrastructure, accessibility, and exhibition spaces while preserving its rich cultural heritage."
+msgstr "Este projeto transformador busca melhorar a infraestrutura, a acessibilidade e os espaços de exposição da galeria, ao mesmo tempo em que preserva sua rica herança cultural."
+
+#: patterns/banner-project-description.php:17
+msgctxt "Sample title for a project or post"
+msgid "Art Gallery — Overview"
+msgstr "Galeria de arte — Visão geral"
+
+#: patterns/banner-project-description.php
+msgctxt "Pattern title"
+msgid "Project description"
+msgstr "Descrição do projeto"
+
+#: patterns/banner-hero.php:52
+msgid "Building exterior in Toronto, Canada"
+msgstr "Exterior de edifício em Toronto, Canadá"
+
+#: patterns/banner-hero.php:37
+msgctxt "Button text of the hero section"
+msgid "About us"
+msgstr "Quem somos"
+
+#: patterns/banner-hero.php:26
+msgctxt "Content of the hero section"
+msgid "Études is a pioneering firm that seamlessly merges creativity and functionality to redefine architectural excellence."
+msgstr "A Études é uma empresa pioneira que une criatividade e funcionalidade para redefinir a excelência arquitetônica."
+
+#: patterns/banner-hero.php:18
+msgctxt "Heading of the hero section"
+msgid "A commitment to innovation and sustainability"
+msgstr "Um compromisso com a inovação e a sustentabilidade"
+
+#: patterns/banner-hero.php
+msgctxt "Pattern title"
+msgid "Hero"
+msgstr "Herói"
+
+#: functions.php:111
+msgid "With asterisk"
+msgstr "Com asterisco"
+
+#: functions.php:93
+msgid "With arrow"
+msgstr "Com seta"
+
+#: functions.php:74
+msgid "Checkmark"
+msgstr "Marca de seleção"
+
+#: functions.php:51
+msgid "Pill"
+msgstr "Pílula"
+
+#: functions.php:28
+msgid "Arrow icon"
+msgstr "Ícone de seta"
+
 #. Author of the theme
 #: style.css
 #, gp-priority: low
 msgid "the WordPress team"
 msgstr "a equipe do WordPress"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://wordpress.org/themes/twentytwentyfour/"
+msgstr "https://br.wordpress.org/themes/twentytwentyfour/"
